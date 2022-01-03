@@ -15,6 +15,10 @@
 		4D22FF482782E49900545915 /* WelcomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22FF472782E49900545915 /* WelcomeView.swift */; };
 		4D22FF4A2782E6BC00545915 /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22FF492782E6BC00545915 /* LoadingView.swift */; };
 		4D22FF4C2782E82D00545915 /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22FF4B2782E82D00545915 /* WeatherManager.swift */; };
+		4D22FF4E2782EC6700545915 /* WeatherView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22FF4D2782EC6700545915 /* WeatherView.swift */; };
+		4D22FF502782F6F700545915 /* ModelData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22FF4F2782F6F700545915 /* ModelData.swift */; };
+		4D22FF522782F85E00545915 /* weatherData.json in Resources */ = {isa = PBXBuildFile; fileRef = 4D22FF512782F85E00545915 /* weatherData.json */; };
+		4D22FF542782F96600545915 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D22FF532782F96600545915 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +31,10 @@
 		4D22FF472782E49900545915 /* WelcomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeView.swift; sourceTree = "<group>"; };
 		4D22FF492782E6BC00545915 /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		4D22FF4B2782E82D00545915 /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		4D22FF4D2782EC6700545915 /* WeatherView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherView.swift; sourceTree = "<group>"; };
+		4D22FF4F2782F6F700545915 /* ModelData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelData.swift; sourceTree = "<group>"; };
+		4D22FF512782F85E00545915 /* weatherData.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = weatherData.json; sourceTree = "<group>"; };
+		4D22FF532782F96600545915 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +70,7 @@
 				4D22FF462782E44B00545915 /* Views */,
 				4D22FF402782E20200545915 /* Managers */,
 				4D22FF322782E15300545915 /* WeatherXApp.swift */,
+				4D22FF532782F96600545915 /* Extensions.swift */,
 				4D22FF362782E15500545915 /* Assets.xcassets */,
 				4D22FF382782E15500545915 /* Preview Content */,
 			);
@@ -72,6 +81,8 @@
 			isa = PBXGroup;
 			children = (
 				4D22FF392782E15500545915 /* Preview Assets.xcassets */,
+				4D22FF4F2782F6F700545915 /* ModelData.swift */,
+				4D22FF512782F85E00545915 /* weatherData.json */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -91,6 +102,7 @@
 				4D22FF342782E15300545915 /* ContentView.swift */,
 				4D22FF472782E49900545915 /* WelcomeView.swift */,
 				4D22FF492782E6BC00545915 /* LoadingView.swift */,
+				4D22FF4D2782EC6700545915 /* WeatherView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -154,6 +166,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D22FF3A2782E15500545915 /* Preview Assets.xcassets in Resources */,
+				4D22FF522782F85E00545915 /* weatherData.json in Resources */,
 				4D22FF372782E15500545915 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,10 +179,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				4D22FF4C2782E82D00545915 /* WeatherManager.swift in Sources */,
+				4D22FF542782F96600545915 /* Extensions.swift in Sources */,
 				4D22FF352782E15300545915 /* ContentView.swift in Sources */,
 				4D22FF332782E15300545915 /* WeatherXApp.swift in Sources */,
 				4D22FF442782E23800545915 /* LocationManager.swift in Sources */,
 				4D22FF4A2782E6BC00545915 /* LoadingView.swift in Sources */,
+				4D22FF502782F6F700545915 /* ModelData.swift in Sources */,
+				4D22FF4E2782EC6700545915 /* WeatherView.swift in Sources */,
 				4D22FF482782E49900545915 /* WelcomeView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
