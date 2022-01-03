@@ -28,8 +28,57 @@ struct WeatherView: View {
                 VStack {
                     HStack {
                         VStack(spacing: 20) {
-                            Image(systemName: "sun.max")
-                                .font(.system(size: 40))
+                            
+                            switch weather.weather.first?.id {
+                            case 200, 201, 202:
+                                Image(systemName: "cloud.bolt.rain")
+                                    .font(.system(size: 40))
+                            case 210, 211, 212, 221:
+                                Image(systemName: "cloud.bolt")
+                                    .font(.system(size: 40))
+                            case 230, 231, 232:
+                                Image(systemName: "cloud.rain")
+                                    .font(.system(size: 40))
+                            case 300, 301, 302, 321:
+                                Image(systemName: "cloud.drizzle")
+                                    .font(.system(size: 40))
+                            case 310, 311, 312, 313, 314:
+                                Image(systemName: "cloud.rain")
+                                    .font(.system(size: 40))
+                            case 500, 501, 502, 503, 504, 511, 520, 521, 522, 531:
+                                Image(systemName: "cloud.rain")
+                                    .font(.system(size: 40))
+                            case 600, 601, 602:
+                                Image(systemName: "cloud.snow")
+                                    .font(.system(size: 40))
+                            case 611, 612, 613, 615, 616, 620, 621, 622:
+                                Image(systemName: "snow")
+                                    .font(.system(size: 40))
+                            case 711:
+                                Image(systemName: "smoke")
+                                    .font(.system(size: 40))
+                            case 721:
+                                Image(systemName: "sun.haze")
+                                    .font(.system(size: 40))
+                            case 731, 761:
+                                Image(systemName: "sun.dust")
+                                    .font(.system(size: 40))
+                            case 701, 741, 771, 751, 762:
+                                Image(systemName: "cloud.fog")
+                                    .font(.system(size: 40))
+                            case 781:
+                                Image(systemName: "tornado")
+                                    .font(.system(size: 40))
+                            case 800:
+                                Image(systemName: "sun.max")
+                                    .font(.system(size: 40))
+                            case 801, 802, 803, 804:
+                                Image(systemName: "cloud")
+                                    .font(.system(size: 40))
+                            default:
+                                Image(systemName: "sun")
+                                    .font(.system(size: 40))
+                            }
                             
                             Text(weather.weather[0].main)
                         }
