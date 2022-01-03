@@ -38,7 +38,7 @@ struct WeatherView: View {
                         Spacer()
                         
                         Text(weather.main.feels_like.roundDouble() + "°")
-                            .font(.system(size: 100))
+                            .font(.system(size: 85))
                             .fontWeight(.bold)
                             .padding()
                     }
@@ -63,6 +63,34 @@ struct WeatherView: View {
             }
             .padding()
             .frame(maxWidth: .infinity, alignment: .leading)
+            
+            VStack{
+                Spacer()
+                
+                VStack(alignment: .leading, spacing: 20) {
+                    Text("Weather Now")
+                        .bold()
+                        .padding(.bottom)
+                    
+                    HStack {
+                        WeatherRow(logo: "thermometer", name: "Min Temp", value: (weather.main.temp_min.roundDouble() + "°"))
+                        Spacer()
+                        WeatherRow(logo: "thermometer", name: "Max Temp", value: (weather.main.temp_max.roundDouble() + "°"))
+                    }
+                    HStack {
+                        WeatherRow(logo: "wind", name: "Wind Speed", value: (weather.wind.speed.roundDouble() + "m/s"))
+                        Spacer()
+                        WeatherRow(logo: "humidity", name: "Humidity", value: (weather.main.humidity.roundDouble() + "%"))
+                    }
+                }
+                .frame(maxWidth: .infinity, alignment: .leading)
+                .padding()
+                .padding(.bottom, 20)
+                .foregroundColor(Color(hue: 0.639, saturation: 0.768, brightness: 0.32))
+                .background(.white)
+                .cornerRadius(20, corners: [.topLeft, .topRight])
+            }
+            
         }
         .background(Color(hue: 0.639, saturation: 0.768, brightness: 0.32))
         .preferredColorScheme(.dark)
